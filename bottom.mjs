@@ -1,0 +1,11 @@
+import puppeteer from "puppeteer-core";
+const [url, out] = process.argv.slice(2);
+const b = await puppeteer.launch({ executablePath: "/usr/bin/google-chrome", headless: "new", args:["--no-sandbox","--disable-gpu","--hide-scrollbars"] });
+const p = await b.newPage();
+await p.setViewport({ width: 1440, height: 900 });
+await p.goto(url, { waitUntil: "networkidle0" });
+await p.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+await new Promise(r=>setTimeout(r,1200));
+await p.screenshot({ path: out });
+console.log("saved", out);
+await b.close();
