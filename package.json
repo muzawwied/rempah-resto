@@ -1,0 +1,22 @@
+{
+  "name": "rempah-template",
+  "private": true,
+  "version": "0.1.0",
+  "dependencies": {
+    "gsap": "^3.15.1",
+    "next": "15",
+    "qrcode": "^1.5.4",
+    "react": "19",
+    "react-dom": "19"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.3.0",
+    "jsqr": "^1.4.0",
+    "pngjs": "^7.0.0",
+    "puppeteer-core": "^25.18.1",
+    "typescript": "6",
+    "wrangler": "3"
+  }
+}

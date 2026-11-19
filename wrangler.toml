@@ -1,0 +1,8 @@
+name = "rempah-demo"
+pages_build_output_dir = "out"
+compatibility_date = "2026-11-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "resto-orders"
+database_id = "b1a4b576-2b77-4769-910f-28baccb59aac"
